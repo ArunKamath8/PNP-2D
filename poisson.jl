@@ -138,7 +138,7 @@ function assemblePoissonb(n, f)
                 end
 
             elseif boundary_label[i, j] == 0 || boundary_label[i, j] == 2 || boundary_label[i, j] == 3
-                #robin type condition for horizontal down
+                #periodic condition
                 b[row] = f[i, j] * dx^2 / epsilon^2
 
             else
